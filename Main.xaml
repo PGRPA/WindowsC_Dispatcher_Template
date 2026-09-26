@@ -122,7 +122,7 @@
       <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <StateMachine InitialState="{x:Reference __ReferenceID0}" sap2010:Annotation.AnnotationText="[Process_Name_Dispatcher]&#xA;[Process description]&#xA;[Author]&#xA;&#xA;To modify:&#xA;- provide process: name, description, author here and in project.json&#xA;- change Main Workflow properties name to: Process_Name&#xA;- change files names: Data\Config_Process_Name.xlsx, Tests\TS_Process_Name.xlsx,&#xA;=&gt; to: Process_Name_Dispatcher\Performer&#xA;- edit Config values and move file to another directory if needed&#xA;- remove unused entries in Config&#xA;- add assets to Orchestrator if needed&#xA;- add Queue to Orchestrator&#xA;- update packages if needed&#xA;- re-add test data Excel file, to TC workflows if needed&#xA;- adjust 2 variables in 3 Workflows: Initialization\Init Configs, _Sandbox\Init Configs, TC_WorkflowName\Init Configs,&#xA;=&gt; Assign - strConfigFilePathLocal, Get Asset - strConfigFilePath,&#xA;- remove unused imports&#xA;- remove unused Workflows&#xA;- remove unnecessary Then-Else sequences&#xA;- open each file &amp; Workflow for error check&#xA;- check Project Settings&#xA;- run analyzer&#xA;- run parse XAML&#xA;&#xA;Activities\Workflows - files - Config entries =&gt; delete if not used:&#xA;Build Data Table - dtExcelReportTable - -&#xA;TC_WorkflowName.xaml TS_Process_Name.xlsx -&#xA;AppXYLogin.xaml - AppXYLogin&#xA;AppXYLogout.xaml - -&#xA;ExcelGetTable.xaml Input_File.xlsx ExcelInputFilePath, ExcelInputSheet, RequiredColumnNames, ExcelGetTable&#xA;OutlookGetEmails.xaml - OutlookInboxFolderPath, OutlookEmailsAmount, OutlookGetEmails&#xA;OutlookMoveEmail.xaml - OutlookInboxFolderPath, OutlookEmailsAmount, OutlookGetEmails&#xA;APIRunQuery.xaml - APIRunQuery&#xA;FoldersCreate.xaml - -&#xA;QueueGetAllItems.xaml - -&#xA;ShowRobotStatus.xaml Robot_Zakończył_Pracę.txt RobotStatusFolderPath, ShowRobotStatus&#xA;SQLRunQuery.xaml - SQLRunQuery" DisplayName="Process_Name_Dispatcher" sap:VirtualizedContainerService.HintSize="901,808" sap2010:WorkflowViewState.IdRef="StateMachine_1">
+  <StateMachine InitialState="{x:Reference __ReferenceID0}" sap2010:Annotation.AnnotationText="[Process_Name_Dispatcher]&#xA;[Process description]&#xA;[Author]&#xA;&#xA;To modify:&#xA;- provide process: name, description, author here and in project.json&#xA;- change Main Workflow properties name to: Process_Name&#xA;- change files names: Data\Config_Process_Name.xlsx, Tests\TS_Process_Name.xlsx,&#xA;=&gt; to: Process_Name_Dispatcher\Performer&#xA;- edit Config values and move file to another directory if needed&#xA;- remove unused entries in Config&#xA;- add assets to Orchestrator if needed&#xA;- add Queue to Orchestrator&#xA;- update packages if needed&#xA;- re-add test data Excel file, to TC workflows if needed&#xA;- adjust 2 variables in 3 Workflows: Initialization\Init Configs, _Sandbox\Init Configs, TC_WorkflowName\Init Configs,&#xA;=&gt; Assign - strConfigFilePathLocal, Get Asset - strConfigFilePath,&#xA;- remove unused imports&#xA;- remove unused Workflows&#xA;- remove unnecessary Then-Else sequences&#xA;- open each file &amp; Workflow for error check&#xA;- check Project Settings&#xA;- run analyzer&#xA;- run parse XAML&#xA;&#xA;Activities\Workflows - files - Config entries =&gt; delete if not used:&#xA;Build Data Table - dtExcelReportTable - -&#xA;TC_WorkflowName.xaml TS_Process_Name.xlsx -&#xA;AppXYLogin.xaml - AppXYLogin&#xA;AppXYLogout.xaml - -&#xA;ExcelGetTable.xaml Input_File.xlsx ExcelInputFilePath, ExcelInputSheet, RequiredColumnNames, ExcelGetTable&#xA;OutlookGetEmails.xaml - OutlookInboxFolderPath, OutlookEmailsAmount, OutlookGetEmails&#xA;OutlookMoveEmail.xaml - OutlookInboxFolderPath, OutlookEmailsAmount, OutlookGetEmails&#xA;APIRunQuery.xaml - APIRunQuery&#xA;FoldersCreate.xaml - -&#xA;QueueGetAllItems.xaml - -&#xA;ShowRobotStatus.xaml Robot_Zakończył_Pracę.txt RobotStatusFolderPath, ShowRobotStatus&#xA;SQLRunQuery.xaml - SQLRunQuery" DisplayName="Process_Name_Dispatcher" sap:VirtualizedContainerService.HintSize="514.4,592" sap2010:WorkflowViewState.IdRef="StateMachine_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -839,7 +839,7 @@ new List&lt;string&gt;{ScreenshotPathInit} :
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">120,119</av:Point>
-          <av:Size x:Key="ShapeSize">200,121</av:Size>
+          <av:Size x:Key="ShapeSize">200,120.8</av:Size>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           <x:Double x:Key="StateContainerWidth">188</x:Double>
@@ -860,7 +860,7 @@ new List&lt;string&gt;{ScreenshotPathInit} :
             <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">SystemException == null</CSharpValue>
           </Transition.Condition>
           <Transition.To>
-            <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="Get items that will be added to the queue." DisplayName="Get Transaction Data" sap:VirtualizedContainerService.HintSize="496,860" sap2010:WorkflowViewState.IdRef="State_3">
+            <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="Get items that will be added to the queue." DisplayName="Get Transaction Data" sap:VirtualizedContainerService.HintSize="209.6,109.6" sap2010:WorkflowViewState.IdRef="State_3">
               <State.Entry>
                 <Sequence DisplayName="Retrieve Data" sap:VirtualizedContainerService.HintSize="450,406" sap2010:WorkflowViewState.IdRef="Sequence_128">
                   <sap:WorkflowViewStateService.ViewState>
@@ -1176,7 +1176,7 @@ new List&lt;string&gt;{ScreenshotPathInit} :
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">505,225</av:Point>
-                  <av:Size x:Key="ShapeSize">210,109</av:Size>
+                  <av:Size x:Key="ShapeSize">209.6,109.6</av:Size>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   <x:Double x:Key="StateContainerWidth">197.9999999999999</x:Double>
@@ -1202,7 +1202,7 @@ new List&lt;string&gt;{ScreenshotPathInit} :
                 <Transition DisplayName="New Transaction" sap:VirtualizedContainerService.HintSize="450,494" sap2010:WorkflowViewState.IdRef="Transition_14">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:PointCollection x:Key="ConnectorLocation">641.5,334 641.5,364 642,364 642,425</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">641.24,334.6 641.24,364.6 642,364.6 642,425</av:PointCollection>
                       <x:Int32 x:Key="SrcConnectionPointIndex">51</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">42</x:Int32>
                     </scg:Dictionary>
@@ -1211,7 +1211,7 @@ new List&lt;string&gt;{ScreenshotPathInit} :
                     <CSharpValue x:TypeArguments="x:Boolean" DisplayName="C sharp value" sap2010:WorkflowViewState.IdRef="CSharpValue`1_188">SystemException == null &amp; boolAddItems == true</CSharpValue>
                   </Transition.Condition>
                   <Transition.To>
-                    <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="Add items to the queue." DisplayName="Queue Populate" sap:VirtualizedContainerService.HintSize="240,92" sap2010:WorkflowViewState.IdRef="State_1">
+                    <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="Add items to the queue." DisplayName="Queue Populate" sap:VirtualizedContainerService.HintSize="240,91.2" sap2010:WorkflowViewState.IdRef="State_1">
                       <State.Entry>
                         <TryCatch DisplayName="Try Catch - QueuePopulate.xaml" sap:VirtualizedContainerService.HintSize="452,562" sap2010:WorkflowViewState.IdRef="TryCatch_18">
                           <sap:WorkflowViewStateService.ViewState>
@@ -1325,7 +1325,7 @@ new List&lt;string&gt;{ScreenshotPathInit} :
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">510,425</av:Point>
-                          <av:Size x:Key="ShapeSize">240,92</av:Size>
+                          <av:Size x:Key="ShapeSize">240,91.2</av:Size>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                           <x:Double x:Key="StateContainerWidth">227.9999999999998</x:Double>
@@ -1336,7 +1336,7 @@ new List&lt;string&gt;{ScreenshotPathInit} :
                         <Transition sap2010:Annotation.AnnotationText="There is no need for any action in case of successful transaction.&#xA;The process should simply go to next transaction." DisplayName="Success" sap:VirtualizedContainerService.HintSize="448.8,535.2" sap2010:WorkflowViewState.IdRef="Transition_10">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:PointCollection x:Key="ConnectorLocation">750,457.2 780,457.2 780,105.45 710,105.45</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">750,456.92 780,456.92 780,105.56 710,105.56</av:PointCollection>
                               <x:Int32 x:Key="SrcConnectionPointIndex">24</x:Int32>
                               <x:Int32 x:Key="DestConnectionPointIndex">40</x:Int32>
                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -1809,7 +1809,7 @@ new List&lt;string&gt;{ScreenshotPathInit} :
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <av:Point x:Key="ShapeLocation">510,40</av:Point>
-                                  <av:Size x:Key="ShapeSize">200,119</av:Size>
+                                  <av:Size x:Key="ShapeSize">200,119.2</av:Size>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                   <x:Double x:Key="StateContainerWidth">187.9999999999999</x:Double>
@@ -1827,7 +1827,7 @@ new List&lt;string&gt;{ScreenshotPathInit} :
                         <Transition sap2010:Annotation.AnnotationText="Business Rule Exception" DisplayName="Failed" sap:VirtualizedContainerService.HintSize="448.8,521.6" sap2010:WorkflowViewState.IdRef="Transition_9">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:PointCollection x:Key="ConnectorLocation">750,484.8 780,484.8 780,75.7 710,75.7</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">750,484.28 780,484.28 780,75.76 710,75.76</av:PointCollection>
                               <x:Int32 x:Key="SrcConnectionPointIndex">48</x:Int32>
                               <x:Int32 x:Key="DestConnectionPointIndex">20</x:Int32>
                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
