@@ -1,6 +1,6 @@
 {
   "Name": "WindowsC_Dispatcher_Template",
   "ProjectType": "Process",
-  "Description": "Process description.",
+  "Description": "UiPath dispatcher template for Windows C# projects",
   "MainFile": "Main.xaml"
 }
