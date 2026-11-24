@@ -114,7 +114,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="OutlookSendEmailRPA" sap:VirtualizedContainerService.HintSize="710,787.2" sap2010:WorkflowViewState.IdRef="Sequence_80">
+  <Sequence DisplayName="OutlookSendEmailRPA" sap:VirtualizedContainerService.HintSize="1008,807.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_80">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Name="listEmailAttachmentFinal" />
       <Variable x:TypeArguments="scg:List(x:String)" Name="listEmailAttachment2" />
@@ -130,14 +130,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message - 69" sap:VirtualizedContainerService.HintSize="478.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_59" Level="Trace">
+    <ui:LogMessage DisplayName="Log Message - 70" sap:VirtualizedContainerService.HintSize="478,175" sap2010:WorkflowViewState.IdRef="LogMessage_59" Level="Trace">
       <ui:LogMessage.Message>
         <InArgument x:TypeArguments="x:Object">
           <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_543">"Start - Outlook Send Email RPA"</CSharpValue>
         </InArgument>
       </ui:LogMessage.Message>
     </ui:LogMessage>
-    <ui:MultipleAssign DisplayName="Multiple Assign - Email Details" sap:VirtualizedContainerService.HintSize="478.4,367.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Assign - Email Details" sap:VirtualizedContainerService.HintSize="478,366" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -258,7 +258,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <If DisplayName="If - Email Address Provided" sap:VirtualizedContainerService.HintSize="478.4,56.8" sap2010:WorkflowViewState.IdRef="If_35">
+    <If DisplayName="If - Email Address Provided" sap:VirtualizedContainerService.HintSize="478,57" sap2010:WorkflowViewState.IdRef="If_35">
       <If.Condition>
         <InArgument x:TypeArguments="x:Boolean">
           <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_526">!strEmailTo.Equals("null")</CSharpValue>
@@ -271,23 +271,23 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,633" sap2010:WorkflowViewState.IdRef="Sequence_91">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_91">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <TryCatch DisplayName="Try Catch - Send Email" sap:VirtualizedContainerService.HintSize="452,573" sap2010:WorkflowViewState.IdRef="TryCatch_22">
+          <TryCatch DisplayName="Try Catch - OutlookSendEmail.xaml" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="TryCatch_22">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Workflows\\Outlook\\OutlookSendEmail.xaml" sap:VirtualizedContainerService.HintSize="450,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_34" UnSafe="False" WorkflowFileName="Workflows\\Outlook\\OutlookSendEmail.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Workflows\Outlook\OutlookSendEmail.xaml" sap:VirtualizedContainerService.HintSize="450,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_34" UnSafe="False" WorkflowFileName="Workflows\Outlook\OutlookSendEmail.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
-                  <InArgument x:TypeArguments="x:Int32" x:Key="intSMTP_1_Exchange_2_Outlook_3">1</InArgument>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="intSMTP_1_Exchange_2_Outlook_3">2</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="strEmailTO">
                     <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_527">strEmailTo</CSharpValue>
                   </InArgument>
@@ -360,7 +360,7 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                   </ActivityAction.Argument>
-                  <ui:LogMessage DisplayName="Log Message - 70" sap:VirtualizedContainerService.HintSize="450,143" sap2010:WorkflowViewState.IdRef="LogMessage_62" Level="Error">
+                  <ui:LogMessage DisplayName="Log Message - 71" sap:VirtualizedContainerService.HintSize="450,143" sap2010:WorkflowViewState.IdRef="LogMessage_62" Level="Error">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
                         <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_540">"=&gt;Error: " + exception.Message + Environment.NewLine + "=&gt;At: " + exception.Source + "."</CSharpValue>
@@ -371,7 +371,7 @@
               </Catch>
             </TryCatch.Catches>
             <TryCatch.Finally>
-              <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_90">
+              <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_90">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -383,13 +383,13 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,226" sap2010:WorkflowViewState.IdRef="Sequence_92">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_92">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message - 71" sap:VirtualizedContainerService.HintSize="452,166" sap2010:WorkflowViewState.IdRef="LogMessage_61" Level="Info">
+          <ui:LogMessage DisplayName="Log Message - 72" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_61" Level="Info">
             <ui:LogMessage.Message>
               <InArgument x:TypeArguments="x:Object">
                 <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_541">"E-mail address was not provided"</CSharpValue>
@@ -399,7 +399,7 @@
         </Sequence>
       </If.Else>
     </If>
-    <ui:LogMessage DisplayName="Log Message - 72" sap:VirtualizedContainerService.HintSize="478.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_60" Level="Trace">
+    <ui:LogMessage DisplayName="Log Message - 73" sap:VirtualizedContainerService.HintSize="478,166" sap2010:WorkflowViewState.IdRef="LogMessage_60" Level="Trace">
       <ui:LogMessage.Message>
         <InArgument x:TypeArguments="x:Object">
           <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_544">"Stop - Outlook Send Email RPA"</CSharpValue>

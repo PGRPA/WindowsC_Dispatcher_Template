@@ -118,7 +118,7 @@
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="For Workflow tests." DisplayName="TC_WorkflowName" sap:VirtualizedContainerService.HintSize="901,807.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="For Workflow tests." DisplayName="TC_WorkflowName" sap:VirtualizedContainerService.HintSize="692,591.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(scg:Dictionary(x:String, x:Object))" Name="listDictEmployeeDetails" />
       <Variable x:TypeArguments="s:Exception" Name="exSystemException" />
@@ -129,14 +129,14 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="649.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="Init Configs variables." DisplayName="Init Configs" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_27">
+      <Sequence sap2010:Annotation.AnnotationText="Init Configs variables." DisplayName="Init Configs" sap:VirtualizedContainerService.HintSize="649.6,88" sap2010:WorkflowViewState.IdRef="Sequence_27">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="strConfigFilePath" />
           <Variable x:TypeArguments="ui:CurrentJobInfo" Name="objProcessInfoInit" />
@@ -149,14 +149,14 @@
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:GetCurrentJobInfo DisplayName="Get Current Job Info - objProcessInfoInit" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_2">
+        <ui:GetCurrentJobInfo DisplayName="Get Current Job Info - objProcessInfoInit" sap:VirtualizedContainerService.HintSize="616,56.8" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_2">
           <ui:GetCurrentJobInfo.Result>
             <OutArgument x:TypeArguments="ui:CurrentJobInfo">
               <CSharpReference x:TypeArguments="ui:CurrentJobInfo" sap2010:WorkflowViewState.IdRef="CSharpReference`1_48">objProcessInfoInit</CSharpReference>
             </OutArgument>
           </ui:GetCurrentJobInfo.Result>
         </ui:GetCurrentJobInfo>
-        <Assign DisplayName="Assign - strConfigFilePathLocal" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_30">
+        <Assign DisplayName="Assign - strConfigFilePathLocal" sap:VirtualizedContainerService.HintSize="616,174.4" sap2010:WorkflowViewState.IdRef="Assign_30">
           <Assign.To>
             <OutArgument x:TypeArguments="x:String">
               <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_60">strConfigFilePathLocal</CSharpReference>
@@ -168,36 +168,67 @@
             </InArgument>
           </Assign.Value>
         </Assign>
-        <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" ContinueOnError="True" DisplayName="Retry Scope - Get Orchestrator Asset" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="2" RetryInterval="00:00:05">
-          <ui:RetryScope.ActivityBody>
-            <ActivityAction>
-              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,227" sap2010:WorkflowViewState.IdRef="Sequence_36">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:GetRobotAsset AssetName="Process_Name_Dispatcher_Config" CacheStrategy="None" DisplayName="Get Asset - strConfigFilePath" sap:VirtualizedContainerService.HintSize="416,167" sap2010:WorkflowViewState.IdRef="GetRobotAsset_6" TimeoutMS="8000">
-                  <ui:GetRobotAsset.Value>
-                    <OutArgument x:TypeArguments="x:String">
-                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_61">strConfigFilePath</CSharpReference>
-                    </OutArgument>
-                  </ui:GetRobotAsset.Value>
-                </ui:GetRobotAsset>
-              </Sequence>
-            </ActivityAction>
-          </ui:RetryScope.ActivityBody>
-          <ui:RetryScope.Condition>
-            <ActivityFunc x:TypeArguments="x:Boolean" />
-          </ui:RetryScope.Condition>
+        <If DisplayName="If - in_EnvironmentProd" sap:VirtualizedContainerService.HintSize="616,56.8" sap2010:WorkflowViewState.IdRef="If_1">
+          <If.Condition>
+            <InArgument x:TypeArguments="x:Boolean">
+              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_101">in_EnvironmentProd</CSharpValue>
+            </InArgument>
+          </If.Condition>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-        </ui:RetryScope>
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Framework\\InitAllSettings.xaml - Init" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Framework\\InitAllSettings.xaml">
+          <If.Then>
+            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,108" sap2010:WorkflowViewState.IdRef="Sequence_37">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" ContinueOnError="True" DisplayName="Retry Scope - Get Orchestrator Asset" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="2" RetryInterval="00:00:05">
+                <ui:RetryScope.ActivityBody>
+                  <ActivityAction>
+                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,227" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:GetRobotAsset AssetName="Process_Name_Dispatcher_Config" CacheStrategy="None" DisplayName="Get Asset - strConfigFilePath" sap:VirtualizedContainerService.HintSize="416,167" sap2010:WorkflowViewState.IdRef="GetRobotAsset_6" TimeoutMS="8000">
+                        <ui:GetRobotAsset.Value>
+                          <OutArgument x:TypeArguments="x:String">
+                            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_61">strConfigFilePath</CSharpReference>
+                          </OutArgument>
+                        </ui:GetRobotAsset.Value>
+                      </ui:GetRobotAsset>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:RetryScope.ActivityBody>
+                <ui:RetryScope.Condition>
+                  <ActivityFunc x:TypeArguments="x:Boolean" />
+                </ui:RetryScope.Condition>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:RetryScope>
+            </Sequence>
+          </If.Then>
+          <If.Else>
+            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_38">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Sequence>
+          </If.Else>
+        </If>
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Framework\InitAllSettings.xaml" sap:VirtualizedContainerService.HintSize="616,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Framework\InitAllSettings.xaml">
           <ui:InvokeWorkflowFile.Arguments>
             <InArgument x:TypeArguments="x:String" x:Key="in_ConfigFile">
               <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_99">(String.IsNullOrEmpty(strConfigFilePath) ? strConfigFilePathLocal : strConfigFilePath)</CSharpValue>
@@ -210,7 +241,7 @@
             </OutArgument>
           </ui:InvokeWorkflowFile.Arguments>
         </ui:InvokeWorkflowFile>
-        <ui:LogMessage DisplayName="Log Message - 33" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Warn">
+        <ui:LogMessage DisplayName="Log Message - 34" sap:VirtualizedContainerService.HintSize="616,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Warn">
           <ui:LogMessage.Message>
             <InArgument x:TypeArguments="x:Object">
               <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_100" xml:space="preserve">(!String.IsNullOrEmpty(strConfigFilePath) ? 
@@ -225,7 +256,7 @@
             </InArgument>
           </ui:LogMessage.Message>
         </ui:LogMessage>
-        <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" Settings="{x:Null}" DisplayName="Deserialize JSON - jsonConfig" sap:VirtualizedContainerService.HintSize="416,165" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_9">
+        <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" Settings="{x:Null}" DisplayName="Deserialize JSON - jsonConfig" sap:VirtualizedContainerService.HintSize="616,164.8" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_9">
           <ui:DeserializeJson.JsonObject>
             <OutArgument x:TypeArguments="njl:JObject">
               <CSharpReference x:TypeArguments="njl:JObject" sap2010:WorkflowViewState.IdRef="CSharpReference`1_54">GlobalVariables.jsonConfig</CSharpReference>
@@ -238,7 +269,7 @@
           </ui:DeserializeJson.JsonString>
         </ui:DeserializeJson>
       </Sequence>
-      <Sequence sap2010:Annotation.AnnotationText="Prepare input argument - List Of Dictionaries from Json String, provided in an Excel TS file." DisplayName="Prepare Input Argument" sap:VirtualizedContainerService.HintSize="450,93" sap2010:WorkflowViewState.IdRef="Sequence_16">
+      <Sequence sap2010:Annotation.AnnotationText="Prepare input argument - List Of Dictionaries from Json String, provided in an Excel TS file." DisplayName="Prepare Input Argument" sap:VirtualizedContainerService.HintSize="649.6,79.2" sap2010:WorkflowViewState.IdRef="Sequence_16">
         <Sequence.Variables>
           <Variable x:TypeArguments="s:String[]" Name="arrEmployeeDB_Add" />
           <Variable x:TypeArguments="s:String[]" Name="arrEmployeeDB_Remove" />
@@ -347,7 +378,7 @@
         </ui:ForEach>
       </Sequence>
     </Sequence>
-    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_13">
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="649.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_13">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -383,7 +414,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message - 34" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Error">
+                <ui:LogMessage DisplayName="Log Message - 35" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Error">
                   <ui:LogMessage.Message>
                     <InArgument x:TypeArguments="x:Object">
                       <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_79">"=&gt;Error: " + exception.Message + Environment.NewLine + "=&gt;At: " + exception.Source + "."</CSharpValue>
@@ -418,7 +449,7 @@
         </TryCatch.Finally>
       </TryCatch>
     </Sequence>
-    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="649.6,48" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:String[]" Name="arrAE_BE" />
         <Variable x:TypeArguments="x:Boolean" Name="boolTCResult" />
@@ -453,7 +484,7 @@
           </OutArgument>
         </uta:VerifyExpression.Result>
       </uta:VerifyExpression>
-      <ui:LogMessage DisplayName="Log Message - 35" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn">
+      <ui:LogMessage DisplayName="Log Message - 36" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn">
         <ui:LogMessage.Message>
           <InArgument x:TypeArguments="x:Object">
             <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">"***TC Result: " + (boolTCResult ? "Positive" : "Negative") + "***"</CSharpValue>
